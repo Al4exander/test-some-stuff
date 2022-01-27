@@ -1,0 +1,36 @@
+.form {
+    width: 500px;
+
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 200ms;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+        transition: background-color 200ms;
+    }
+
+    span {
+        color: #a40000;
+    }
+}
