@@ -1,10 +1,8 @@
-import { Layout } from '../components/Layout';
+import AionMap from '../components/AionMap/AionMap';
 
 const Index = () => {
     return (
-        <Layout>
-            <h1>You can test some stuff here</h1>
-        </Layout>
+        <AionMap />
     );
 };
 

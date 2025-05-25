@@ -29,14 +29,13 @@
     "yup": "0.32.9"
   },
   "scripts": {
-    "eject": "react-scripts eject",
-    "build-next": "next build",
+    "build-next": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "dev": "next dev",
     "clear-build": "rimraf .next",
     "build": "rimraf .next && next build",
     "start": "npm run build && next start",
     "install-staff": "npm i @emotion/styled",
-    "start-node": "node server.js"
+    "start-node": "NODE_OPTIONS=--openssl-legacy-provider node server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +57,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/react": "^17.0.86",
     "eslint": "7.28.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-airbnb-base": "14.2.1",
