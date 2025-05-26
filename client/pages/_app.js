@@ -1,15 +1,12 @@
 import { appWithTranslation } from 'next-i18next';
-
-import { RootStoreProvider } from '../init/providers/RootStoreProvider';
 import nextI18NextConfig from '../next-i18next.config';
 
 import '../styles/globals.css';
+import AionMap from '../components/AionMap/AionMap';
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = () => {
     return (
-        <RootStoreProvider hydrationData = { pageProps.hydrationData }>
-            <Component { ...pageProps } />
-        </RootStoreProvider>
+        <AionMap />
     );
 };
 
