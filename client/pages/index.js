@@ -1,6 +1,4 @@
-import Document, {
-    Head,
-} from 'next/document';
+import Head from 'next/head';
 import AionMap from '../components/AionMap/AionMap';
 
 const Index = () => {
