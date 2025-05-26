@@ -1,13 +1,9 @@
 import { appWithTranslation } from 'next-i18next';
 import nextI18NextConfig from '../next-i18next.config';
-
 import '../styles/globals.css';
-import AionMap from '../components/AionMap/AionMap';
 
-const MyApp = () => {
-    return (
-        <AionMap />
-    );
-};
+function MyApp({ Component, pageProps }) {
+    return <Component { ...pageProps } />;
+}
 
 export default appWithTranslation(MyApp, nextI18NextConfig);
