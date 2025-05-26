@@ -49,7 +49,7 @@ export default function MapPage() {
             <div style = { { position: 'relative', width: '1024px', height: '1024px' } }>
                 <Image
                     src = '/map.png' alt = 'Карта'
-                    fill = 'true'
+                    fill
                     style = { { objectFit: 'contain' } }
                     width = { 1002 }
                     height = { 1003 } />
