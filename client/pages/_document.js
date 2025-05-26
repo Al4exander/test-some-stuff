@@ -30,7 +30,6 @@ class CustomDocument extends Document {
                     <link
                         href = 'https://fonts.googleapis.com/css2?family=Roboto'
                         rel = 'stylesheet' />
-                    <title>Testing some stuff</title>
                 </Head>
                 <body>
                     <Main />
