@@ -7,19 +7,10 @@ class CustomDocument extends Document {
         const originalRenderPage = context.renderPage;
 
         context.renderPage = () => originalRenderPage({
-            /**
-             * В данной секции можно обернуть всё дерево приложения
-             * */
             enhanceApp:       (App) => App,
-            /**
-             * В данной секции можно обернуть покомпонентно
-             * */
             enhanceComponent: (Component) => Component,
         });
 
-        /**
-         * Запуск getInitialProps родителя теперь включает кастомную функцию renderPage
-         * */
         return Document.getInitialProps(context);
     }
 
@@ -31,7 +22,7 @@ class CustomDocument extends Document {
                         href = 'https://fonts.googleapis.com/css2?family=Roboto'
                         rel = 'stylesheet' />
                 </Head>
-                <body>
+                <body className = 'theme'>
                     <Main />
                     <NextScript />
                 </body>

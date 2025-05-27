@@ -19,7 +19,7 @@
     "clear-build": "rimraf .next",
     "build": "rimraf .next && next build",
     "start": "npm run build && next start",
-    "start-node": "node server.js"
+    "start-node": "NODE_OPTIONS=--openssl-legacy-provider node server.js"
   },
   "eslintConfig": {
     "extends": [

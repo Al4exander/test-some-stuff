@@ -14,3 +14,12 @@ body > div {
 * {
     box-sizing: border-box;
 }
+body.theme-light {
+    background-color: white;
+    color: black;
+}
+
+body.theme-dark {
+    background-color: black;
+    color: white;
+}
