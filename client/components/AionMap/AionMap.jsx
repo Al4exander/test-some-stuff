@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import MonsterTimer from '../MonsterTimer';
+import ThemeToggle from '../ThemeToggle';
 import ResetAllButton from '../ResetAllButton';
 
 const MONSTERS = [
@@ -48,7 +49,8 @@ export default function MapPage() {
         <div>
             <div style = { { position: 'relative', width: '1024px', height: '1024px' } }>
                 <Image
-                    src = '/map.png' alt = 'Карта'
+                    src = '/map.png'
+                    alt = 'Карта'
                     style = { { objectFit: 'contain' } }
                     width = { 1002 }
                     height = { 1003 } />
@@ -57,6 +59,7 @@ export default function MapPage() {
                 )) }
             </div>
             <ResetAllButton />
+            <ThemeToggle />
         </div>
     );
 }
