@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import MonsterTimer from '../MonsterTimer';
-import ThemeToggle from '../ThemeToggle';
 import ResetAllButton from '../ResetAllButton';
 
 const MONSTERS = [
@@ -59,7 +58,6 @@ export default function MapPage() {
                 )) }
             </div>
             <ResetAllButton />
-            <ThemeToggle />
         </div>
     );
 }
