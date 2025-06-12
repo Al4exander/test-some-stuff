@@ -2,6 +2,8 @@ import { useEffect, useState, useRef } from 'react';
 
 const TIMER_DURATION = 40 * 60 * 1000;
 
+const TEN_MINUTES_TIMER = 10 * 60 * 1000;
+
 function playTripleBeep() {
     const ctx = new (window.AudioContext || window.webkitAudioContext)();
     const duration = 1.2;
@@ -45,7 +47,8 @@ export default function MonsterTimer({ monster }) {
         return () => clearInterval(interval);
     }, []);
 
-    const remaining = startTime ? Math.floor((startTime + TIMER_DURATION - now) / 1000) : null;
+    const timeToUse = monster.id === 'shullacks_bosses_resp' ? TEN_MINUTES_TIMER : TIMER_DURATION;
+    const remaining = startTime ? Math.floor((startTime + timeToUse - now) / 1000) : null;
 
     useEffect(() => {
         if (remaining === 0 && !hasPlayedSound.current) {
