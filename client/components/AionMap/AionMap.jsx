@@ -22,13 +22,19 @@ const MONSTERS = [
         id: 'veiled_yulf_bassin', name: 'Волк', x: 353, y: 706,
     },
     {
-        id: 'occupied_fortress', name: 'Дракон', x: 438, y: 734,
+        id: 'occupied_fortress', name: 'Дракон', x: 438, y: 784,
     },
     {
-        id: 'laphsaran_battlefield', name: 'Босс в центре', x: 546, y: 654,
+        id: 'shullacks_bosses_resp', name: 'Челы из плавника', x: 526, y: 634,
     },
     {
-        id: 'manipulated_mau', name: 'Каменный босс', x: 665, y: 591,
+        id: 'laphsaran_battlefield', name: 'Босс в центре', x: 526, y: 724,
+    },
+    {
+        id: 'manipulated_mau', name: 'Каменный босс', x: 685, y: 591,
+    },
+    {
+        id: 'mau_boss', name: 'Мау', x: 755, y: 691,
     },
     {
         id: 'drana_fields', name: 'Муха 2', x: 864, y: 748,
@@ -39,7 +45,6 @@ const MONSTERS = [
     {
         id: 'southern_archon_base', name: 'Оса', x: 867, y: 570,
     },
-
 ];
 
 
