@@ -40,7 +40,7 @@ const MONSTERS = [
         id: 'drana_fields', name: 'Муха 2', x: 864, y: 748,
     },
     {
-        id: 'apsus_base', name: 'Лучник', x: 881, y: 184,
+        id: 'apsus_base', name: 'Лучник', x: 882, y: 184,
     },
     {
         id: 'southern_archon_base', name: 'Оса', x: 867, y: 570,
